@@ -25,14 +25,14 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customers-link:hover,
-.customers-link:focus {
-    border-radius: 4px;
-    border-style: solid;
-    border-color: var(--accent-color);
-    border-width: 1px;
+    &:hover,
+    &:focus {
+            border-radius: 4px;
+            border-style: solid;
+            border-color: var(--accent-color);
+            border-width: 1px;
+        }
 }
 
 .company-icon {
@@ -40,10 +40,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .customers-link:hover &,
+    .customers-link:focus & {
+            fill: var(--accent-color);
+            cursor: pointer;
+        }
 }
 
-.customers-link:hover .company-icon,
-.customers-link:focus .company-icon {
-    fill: var(--accent-color);
-    cursor: pointer;
-}

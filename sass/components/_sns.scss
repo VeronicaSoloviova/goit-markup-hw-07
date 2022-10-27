@@ -13,12 +13,12 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.sns-link:hover,
-.sns-link:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
 }
 
 .sns-icon {
@@ -26,12 +26,12 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.sns-link:hover .sns-icon,
-.sns-link:focus .sns-icon {
-    fill: var(--button-text);
-    cursor: pointer;
+    .sns-link:hover &,
+    .sns-link:focus & {
+            fill: var(--button-text);
+            cursor: pointer;
+        }
 }
 
 .sns-join-list {
@@ -52,10 +52,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
 }
 
-.sns-join-link:hover,
-.sns-join-link:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}

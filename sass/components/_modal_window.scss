@@ -10,12 +10,12 @@
     transition-property: opacity, visibility;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+    &.is-hidden {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
 }
 
 .modal {
@@ -48,11 +48,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+            fill: var(--accent-color);
+        }
 }
 
 .modal-form {
@@ -109,22 +109,22 @@
 .user-input {
     height: 40px;
     padding-left: 42px;
-}
 
-.user-input:focus {
-    border-color: var(--accent-color);
-    cursor: pointer;
+    &:focus {
+            border-color: var(--accent-color);
+            cursor: pointer;
+        }
 }
 
 .form-icon {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.user-input:focus+.form-icon {
-    fill: var(--accent-color);
-    cursor: pointer;
+    .user-input:focus + & {
+            fill: var(--accent-color);
+            cursor: pointer;
+        }
 }
 
 .user-data-comment {
@@ -135,18 +135,18 @@
     height: 120px;
     resize: none;
     padding: 12px 16px;
-}
 
-.form-comment:focus {
-    border-color: var(--accent-color);
-    cursor: pointer;
-}
+    &:focus {
+            border-color: var(--accent-color);
+            cursor: pointer;
+        }
 
-.form-comment::placeholder {
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 .checkbox-wrapper {
@@ -159,7 +159,6 @@
     color: var(--secondary-text-color);
 }
 
-
 .form-check {
     border-width: 1px;
     border-color: var(--primary-text-color);
@@ -169,11 +168,11 @@
     margin-right: 7px;
     cursor: pointer;
     fill: #fff;
-}
 
-.form-checkbox:checked+.form-check {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    .form-checkbox:checked + & {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
 }
 
 .contract-check {
@@ -202,10 +201,11 @@
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
