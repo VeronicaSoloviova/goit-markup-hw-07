@@ -1,4 +1,4 @@
-.icon-block {
+.advantages__icon-block {
     width: 270px;
     height: 120px;
     background-color: var(--button-background);
@@ -9,18 +9,18 @@
     align-items: center;
 }
 
-.item {
+.advantages__item {
     max-width: 270px;
 }
 
-.advantages-title {
+.advantages__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     margin-bottom: 10px;
 }
 
-.advantages-text {
+.advantages__text {
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.7;

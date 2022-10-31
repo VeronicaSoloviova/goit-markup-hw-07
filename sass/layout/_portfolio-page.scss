@@ -1,4 +1,4 @@
-.filter-button {
+.nav-buttons__filter {
     background-color: var(--button-background);
     color: var(--primary-text-color);
     border-color: transparent;
@@ -36,11 +36,11 @@
     gap: 30px;
 }
 
-.work {
+.work-example__item {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.work-title {
+.work-example__title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -48,7 +48,7 @@
     margin-bottom: 4px;
 }
 
-.work-link {
+.work-example__link {
     display: block;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -60,7 +60,7 @@
         }
 }
 
-.title-description {
+.work-example__title-description {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #EEEEEE;
@@ -73,7 +73,7 @@
     padding: 20px 24px;
 }
 
-.work-description {
+.work-example__description {
     color: var(--secondary-text-color);
     line-height: 1.9;
 }

@@ -1,9 +1,9 @@
-.section-images {
+.section-what-we-do {
     padding-bottom: 94px;
 }
 
 
-.title-images {
+.section-what-we-do__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -11,17 +11,17 @@
     margin-bottom: 50px;
 }
 
-.images {
+.what-we-do {
     display: flex;
     column-gap: 30px;
 }
 
-.images-thumb {
+.what-we-do__thumb {
     position: relative;
     display: block;
 }
 
-.images-description {
+.what-we-do__description {
     position: absolute;
     bottom: 0;
     width: 100%;

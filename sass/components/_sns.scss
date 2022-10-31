@@ -1,10 +1,10 @@
-.sns {
+.our-team__sns-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
 }
 
-.sns-link {
+.our-team__sns-link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -21,25 +21,25 @@
         }
 }
 
-.sns-icon {
+.our-team__sns-icon {
     fill: var(--icon-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .sns-link:hover &,
-    .sns-link:focus & {
+    .our-team__sns-link:hover &,
+    .our-team__sns-link:focus & {
             fill: var(--button-text);
             cursor: pointer;
         }
 }
 
-.sns-join-list {
+.join__sns-list {
     display: flex;
     column-gap: 10px;
 }
 
-.sns-join-link {
+.join__sns-link {
     width: 44px;
     height: 44px;
     display: flex;

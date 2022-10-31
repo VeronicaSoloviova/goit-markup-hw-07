@@ -12,7 +12,7 @@
     margin-top: 50px;
 }
 
-.customers-link {
+.customers-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,14 +35,14 @@
         }
 }
 
-.company-icon {
+.customers-list__icon {
     fill: var(--icon-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .customers-link:hover &,
-    .customers-link:focus & {
+    .customers-list__link:hover &,
+    .customers-list__link:focus & {
             fill: var(--accent-color);
             cursor: pointer;
         }
